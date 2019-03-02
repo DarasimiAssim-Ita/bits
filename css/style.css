@@ -118,5 +118,17 @@ html, body {
 }
 
 .ActiveCamsContent{
-  display: inline-block;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+
 }
+
+.scroll {
+  flex: 0 0 auto;
+  margin-right: 3px;
+}
+
+
