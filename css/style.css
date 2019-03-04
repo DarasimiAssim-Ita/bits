@@ -3,6 +3,81 @@ html, body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: 'Geomanist Book';
+  src: url('../geomanist-web-font/Geomanist-Book.woff2') format('woff2'),
+      url('../geomanist-web-font/Geomanist-Book.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('../geomanist-web-font/Geomanist-Black.woff2') format('woff2'),
+      url('../geomanist-web-font/Geomanist-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('../geomanist-web-font/Geomanist-Thin.woff2') format('woff2'),
+      url('../geomanist-web-font/Geomanist-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('../geomanist-web-font/Geomanist-Light.woff2') format('woff2'),
+      url('../geomanist-web-font/Geomanist-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('../geomanist-web-font/Geomanist-Bold.woff2') format('woff2'),
+      url('../geomanist-web-font/Geomanist-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('../geomanist-web-font/Geomanist-ExtraLight.woff2') format('woff2'),
+      url('../geomanist-web-font/Geomanist-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('../geomanist-web-font/Geomanist-Regular.woff2') format('woff2'),
+      url('../geomanist-web-font/Geomanist-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geomanist';
+  src: url('../geomanist-web-font/Geomanist-Medium.woff2') format('woff2'),
+      url('../geomanist-web-font/Geomanist-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geomanist Ultra';
+  src: url('../geomanist-web-font/Geomanist-Ultra.woff2') format('woff2'),
+      url('../geomanist-web-font/Geomanist-Ultra.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 .welcome-card ion-img {
   max-height: 35vh;
   overflow: hidden;
@@ -10,9 +85,8 @@ html, body {
 
 .TopHalf{
   background: #F5F6FA;
-  padding-left: 10px;
-  padding-top: 20px;
-  padding-bottom: 35px;
+  padding-top: 100px;
+  padding-bottom: 20px;
 }
 
 .WelcomeHome{
@@ -20,13 +94,21 @@ html, body {
 }
 
 .WelcomeHome h2{
-  color: #3772FF;
-  font-size: 20px;
+  width: 279px;
+  font-family: Geomanist;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.24;
+  letter-spacing: normal;
+  text-align: left;
+  color: #3772ff;
 }
 
 .dot {
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   background: #81D2C7;
   border-radius: 50%;
   color:#18206F;
@@ -36,13 +118,13 @@ html, body {
   margin-top: 0px;
   margin-bottom: 0px;
   margin-right: 5px;
-  margin-left: 0px;
+  margin-left: 5px;
 
 }
 
 .dotAlert{
-  width: 6px;
-  height: 6px;
+  width: 8px;
+  height: 8px;
   background: #FF5A5F;
   border-radius: 50%;
   color:#18206F;
@@ -50,37 +132,64 @@ html, body {
   display: inline-block;
   margin-top: 0px;
   margin-bottom: 0px;
-  margin-right: 5px;
-  margin-left: 0px;
+  margin-right: 10px;
+  margin-left: -3px;
+}
+
+#smoke_alarm{
+  width: 220px;
+  font-family: Geomanist;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18206f;
+  margin-bottom: 0px !important;
 }
 
 .dotText{
-  font-size: 13px; 
-  margin-right: 5px;
-  color: #18206F;
-  opacity: 0.8;
-
+  width: 197px;
+  height: 15px;
+  font-family: Geomanist;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(24, 32, 111, 0.5);
 }
 
 #Now{
-  margin-left: 20px;
-  color: #18206F;
-  opacity: 0.4;
+  width: 26px;
+  height: 15px;
+  font-family: Geomanist;
+  font-size: 10px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(24, 32, 111, 0.5);
+  margin-bottom: -3px !important;
+
 }
 
 .DashboardAlerts{
-  font-size: 9px;
-  background: #e7e8f0;
-  color: #18206F;
-  width: 255px;
-  height: 30px;
-  padding-top: 7px;
-  padding-left: 10px;
+  width: 280px;
+  height: 40px;
   border-radius: 5px;
-  border-color: #3772FF;
-  border-style: solid;
-  border-width: 0.22px;
-
+  border: solid 0.1px #3772ff;
+  background-color: #eef1ff;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .BottomHalf{
@@ -92,29 +201,168 @@ html, body {
 
 
 #Scenes{
-  color: #18206F;
+  width: 62px;
+  height: 25px;
+  font-family: Geomanist;
   font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18206f;
   padding-left: 0px;
+  padding-bottom: 40px;
 }
 
 #Rooms{
-  color: #18206F;
+  width: 62px;
+  height: 25px;
+  font-family: Geomanist;
   font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18206f;
   padding-left: 0px;
+  padding-bottom: 40px;
+
 }
 
 #ActiveCams{
-  color: #18206F;
+  width: 62px;
+  height: 25px;
+  font-family: Geomanist;
   font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18206f;
   padding-left: 0px;
+  padding-bottom: 40px;
+
 }
 
 #viewall{
-  color: #18206F;
+  width: 46px;
+  height: 16px;
+  font-family: Geomanist;
   font-size: 13px;
-  opacity: 0.3;
-  padding-left: 0px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(24, 32, 111, 0.25);
+  padding-left: 30px;
   padding-top: 7px;
+  padding-bottom: 10px;
+}
+
+.scroll {
+  flex: 0 0 auto;
+  margin-right: 3px;
+  width: 100%;
+  height: 2%;
+  border-radius: 5px;
+  overflow-x: scroll;
+}
+
+.container{
+  padding-right: 0px !important; 
+}
+
+.ScenesContent{
+  padding-bottom: 30px;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scenes-active{
+  flex: 0 0 auto;
+  width: 90px;
+  height: 81px;
+  border-radius: 5px;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.16) ;
+  border: solid 0.1px #3772ff ;
+  background-color: #3772ff ;
+  margin-right: 20px;
+}
+
+.scenes-active p{
+  font-family: Geomanist;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  color: #ffffff;
+  padding-top: 25px;
+  text-align: center;
+}
+
+.scenes-inactive{
+  flex: 0 0 auto;
+  width: 90px;
+  height: 81px;
+  border-radius: 5px;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.16);
+  border: solid 0.1px #3772ff;
+  background-color: #ffffff;
+  margin-right: 20px;
+
+}
+
+.scenes-inactive p{
+  font-family: Geomanist;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18206f;
+  padding-top: 25px;
+  text-align: center;
+}
+
+
+#gohome{
+  display: block;
+  margin: auto;
+  padding-top: 15px;
+}
+
+#leavinghome{
+  display: block;
+  margin: auto;
+  padding-top: 15px;
+}
+
+#bedtime{
+  display: block;
+  margin: auto;
+  padding-top: 15px;
+}
+
+
+#cinema{
+  display: block;
+  margin: auto;
+  padding-top: 15px;
 }
 
 .ActiveCamsContent{
@@ -124,11 +372,6 @@ html, body {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 
-}
-
-.scroll {
-  flex: 0 0 auto;
-  margin-right: 3px;
 }
 
 
