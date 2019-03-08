@@ -3,6 +3,10 @@ html, body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 @font-face {
   font-family: 'Geomanist Book';
   src: url('../geomanist-web-font/Geomanist-Book.woff2') format('woff2'),
@@ -76,7 +80,88 @@ html, body {
   font-style: normal;
 }
 
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #fff; /* White*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 0px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  box-shadow: 12px 12px 16px 0 rgba(69, 91, 99, 0.1);
+}
 
+/* The navigation menu links */
+.sidenav a {
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: Geomanist;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  color: #18206F;
+  display: block;
+  transition: 0.3s;
+}
+
+#menu_active{
+  color: #3772ff !important; 
+}
+
+.last_item{
+  padding-bottom: 40px !important;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #3772ff;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: -20px;
+  right: 15px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s;
+  padding: 20px;
+}
+
+.sidenav a img{
+  width: 13%;
+  padding-right: 15px;
+}
+
+#TopImage{
+  width: 100%;
+}
+
+#logout{
+  padding-left: 2px;
+}
+
+#menu{
+  padding-bottom: 60px;
+  margin-top: -20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
 
 .welcome-card ion-img {
   max-height: 35vh;
@@ -85,7 +170,7 @@ html, body {
 
 .TopHalf{
   background: #F5F6FA;
-  padding-top: 100px;
+  padding-top: 60px;
   padding-bottom: 20px;
   padding-left: 10px;
 }
@@ -271,7 +356,7 @@ html, body {
 .scroll {
   flex: 0 0 auto;
   margin-right: 20px;
-  width: 100%;
+  width: 85%;
   height: 2%;
   border-radius: 5px;
   overflow-x: scroll;

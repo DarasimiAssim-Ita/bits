@@ -31,6 +31,21 @@
 
     <div class="TopHalf">
         <div class="container">
+            <img id="menu" onclick="openNav()" src="img/icons-menu.svg">
+            
+            <div id="mySidenav" class="sidenav">
+                <img id="TopImage" src="img/top.png" alt="">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a id="menu_active" href="#"> <img src="img/home_blue.svg">Home</a>
+                <a href="#"><img src="img/room.svg"> Rooms</a>
+                <a href="#"><img src="img/device.svg"> Devices</a>
+                <a href="#"><img src="img/activity.svg"> Activity</a>
+                <a href="#"><img src="img/family.svg"> Family Profile</a>
+                <a href="#"><img src="img/settings.svg"> Settings</a>
+                <a class="last_item" href="privacy.html"><img src="img/privacy.svg"> Privacy Policy</a>
+                <a href="#"><img id="logout" src="img/logout.svg"> Log Out</a>
+            </div>
+
             <div class="WelcomeHome">
                 <h2>Welcome Home, Jemima!</h2>
                 <div class="dot"></div> <span class="dotText"> All Systems Online. No actions needed</span>
@@ -53,8 +68,8 @@
                               Scenes
                         </div>
                         <div class="col-4" id="viewall">
-                               View All
-                        </div>
+                            View All
+                     </div>
                     </div>
                 </div>
 
@@ -129,9 +144,11 @@
 
     </div>
 
+    <script src="js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 </body>
 
 
