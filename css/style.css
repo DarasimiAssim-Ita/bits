@@ -95,6 +95,37 @@ html, body {
   box-shadow: 12px 12px 16px 0 rgba(69, 91, 99, 0.1);
 }
 
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:rgba(55, 114, 255, 0.2); /* Black background with opacity */
+  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #3772ff; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 30px; /* Rounded corners */
+  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2);
+  width: 45px;
+  height: 45px;
+}
+
 /* The navigation menu links */
 .sidenav a {
   padding-top: 20px;
@@ -460,4 +491,106 @@ html, body {
 
 }
 
+.Headings{
+  background-color: #F5F6FA;
+  padding-top: 40px;
+  padding-left: 20px;
+  height: 60px;
+  display: block;
+}
 
+#Hmenu{
+  padding-bottom: 60px;
+  margin-top: -50px;
+}
+
+#Htitle{
+  font-family: Geomanist;
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 60px;
+  letter-spacing: normal;
+  vertical-align: middle;
+  text-align: center; 
+  color: #3772ff;
+  margin-top: -40px;
+
+}
+
+p{
+  font-family: Geomanist;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18206f;
+  padding-top: 20px;
+}
+
+#privacy h2{
+  font-family: Geomanist;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18206F;
+  padding-top: 20px;
+}
+
+#privacy h3{
+  font-family: Geomanist;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18206F;
+  padding-top: 20px;
+}
+dl{
+  font-family: Geomanist;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18206f;
+  padding-top: 10px;
+}
+
+dt{
+  font-family: Geomanist;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18206F;
+}
+
+dd{
+  font-family: Geomanist;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #18206f;
+  padding-top: 10px;
+}

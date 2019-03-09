@@ -3,52 +3,53 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="BITS Smart Home App">
-    <meta name="author" content="BITS Smart Home App">
-    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="BITS Smart Home App" />
+    <meta name="author" content="BITS Smart Home App" />
+    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
     <title>
         BITS Smart Home - Dashboard
     </title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
 
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
-
+    <div id="overlay"></div>
     <div class="TopHalf">
         <div class="container">
-            <img id="menu" onclick="openNav()" src="img/icons-menu.svg">
-            
+            <img id="menu" onclick="openNav()" src="img/icons-menu.svg" />
+
             <div id="mySidenav" class="sidenav">
-                <img id="TopImage" src="img/top.png" alt="">
+                <img id="TopImage" src="img/top.png" alt="" />
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a id="menu_active" href="#"> <img src="img/home_blue.svg">Home</a>
-                <a href="#"><img src="img/room.svg"> Rooms</a>
-                <a href="#"><img src="img/device.svg"> Devices</a>
-                <a href="#"><img src="img/activity.svg"> Activity</a>
-                <a href="#"><img src="img/family.svg"> Family Profile</a>
-                <a href="#"><img src="img/settings.svg"> Settings</a>
-                <a class="last_item" href="privacy.html"><img src="img/privacy.svg"> Privacy Policy</a>
-                <a href="#"><img id="logout" src="img/logout.svg"> Log Out</a>
+                <a id="menu_active" href="index.html"> <img src="img/home_blue.svg" />Home</a>
+                <a href="rooms.html"><img src="img/room.svg" /> Rooms</a>
+                <a href="#"><img src="img/device.svg" /> Devices</a>
+                <a href="#"><img src="img/activity.svg" /> Activity</a>
+                <a href="#"><img src="img/family.svg" /> Family Profile</a>
+                <a href="#"><img src="img/settings.svg" /> Settings</a>
+                <a class="last_item" href="privacy.html"><img src="img/privacy.svg" /> Privacy Policy</a>
+                <a href="#"><img id="logout" src="img/logout.svg" /> Log Out</a>
             </div>
 
             <div class="WelcomeHome">
                 <h2>Welcome Home, Jemima!</h2>
-                <div class="dot"></div> <span class="dotText"> All Systems Online. No actions needed</span>
+                <div class="dot"></div>
+                <span class="dotText"> All Systems Online. No actions needed</span>
             </div>
 
             <div class="DashboardAlerts">
@@ -60,18 +61,17 @@
     </div>
 
     <div class="BottomHalf">
-
         <div class="Scenes">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-8" id="Scenes">
-                              Scenes
-                        </div>
-                        <div class="col-4" id="viewall">
-                            View All
-                     </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-8" id="Scenes">
+                        Scenes
+                    </div>
+                    <div class="col-4" id="viewall">
+                        View All
                     </div>
                 </div>
+            </div>
 
             <div class="ScenesContent">
                 <!--
@@ -79,42 +79,42 @@
                 -->
                 <div class="scenes-active">
                     <div>
-                        <img id="gohome" src="img/go home.svg">
+                        <img id="gohome" src="img/go home.svg" />
                         <p>I'm home</p>
                     </div>
                 </div>
                 <div class="scenes-inactive">
                     <div>
-                        <img id="leavinghome" src="img/leaving home.svg">
+                        <img id="leavinghome" src="img/leaving home.svg" />
                         <p>I'm leaving</p>
                     </div>
                 </div>
                 <div class="scenes-inactive">
                     <div>
-                        <img id="bedtime" src="img/sleep2.svg">
+                        <img id="bedtime" src="img/sleep2.svg" />
                         <p>Bedtime</p>
                     </div>
                 </div>
                 <div class="scenes-inactive">
-                        <div>
-                            <img id="cinema" src="img/cinema.svg">
-                            <p>Cinema</p>
-                        </div>
+                    <div>
+                        <img id="cinema" src="img/cinema.svg" />
+                        <p>Cinema</p>
                     </div>
+                </div>
             </div>
         </div>
 
         <div class="Rooms">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-8" id="Rooms">
-                              Rooms
-                        </div>
-                        <div class="col-4" id="viewall">
-                               View All
-                        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-8" id="Rooms">
+                        Rooms
+                    </div>
+                    <div class="col-4" id="viewall">
+                        View All
                     </div>
                 </div>
+            </div>
 
             <div class="RoomsContent">
                 <!--
@@ -135,25 +135,24 @@
                 </div>
             </div>
             <div class="ActiveCamsContent">
-                <img class="scroll" src="img/bath.jpg">
-                <img class="scroll" src="img/pool.jpg">
-                <img class="scroll" src="img/bedroom.jpg">
-                <img class="scroll" src="img/room.jpg">
+                <img class="scroll" src="img/bath.jpg" />
+                <img class="scroll" src="img/pool.jpg" />
+                <img class="scroll" src="img/bedroom.jpg" />
+                <img class="scroll" src="img/room.jpg" />
             </div>
         </div>
-
     </div>
 
     <script src="js/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
-
 </html>
-
 
 <!--
 
@@ -163,4 +162,3 @@ git commit -m "Blah"
 git push origin master
 
 -->
-
