@@ -146,6 +146,10 @@ body {
 	color: #3772ff !important;
 }
 
+a{
+
+}
+
 .last_item {
 	padding-bottom: 40px !important;
 }
@@ -378,7 +382,7 @@ body {
 	letter-spacing: normal;
 	text-align: left;
 	color: rgba(24, 32, 111, 0.25);
-	padding-left: 30px;
+	padding-left: 14px;
 	padding-top: 7px;
 	padding-bottom: 10px;
 }
@@ -612,6 +616,21 @@ dd {
 }
 
 #JemimaBathroom {
+	width: 99%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url("../img/bath3.jpg");
+  background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#GuestBedroom {
+	width: 99%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("../img/room2.jpg");
+  background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+#GuestBathroom {
 	width: 99%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url("../img/bath.jpg");
   background-size: cover;
