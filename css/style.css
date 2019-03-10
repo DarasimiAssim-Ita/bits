@@ -1,596 +1,656 @@
-html, body {
-  max-width: 100%;
-  overflow-x: hidden;
+html,
+body {
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 @font-face {
-  font-family: 'Geomanist Book';
-  src: url('../geomanist-web-font/Geomanist-Book.woff2') format('woff2'),
-      url('../geomanist-web-font/Geomanist-Book.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
+	font-family: "Geomanist Book";
+	src: url("../geomanist-web-font/Geomanist-Book.woff2") format("woff2"),
+		url("../geomanist-web-font/Geomanist-Book.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Geomanist';
-  src: url('../geomanist-web-font/Geomanist-Black.woff2') format('woff2'),
-      url('../geomanist-web-font/Geomanist-Black.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
+	font-family: "Geomanist";
+	src: url("../geomanist-web-font/Geomanist-Black.woff2") format("woff2"),
+		url("../geomanist-web-font/Geomanist-Black.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Geomanist';
-  src: url('../geomanist-web-font/Geomanist-Thin.woff2') format('woff2'),
-      url('../geomanist-web-font/Geomanist-Thin.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
+	font-family: "Geomanist";
+	src: url("../geomanist-web-font/Geomanist-Thin.woff2") format("woff2"),
+		url("../geomanist-web-font/Geomanist-Thin.woff") format("woff");
+	font-weight: 100;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Geomanist';
-  src: url('../geomanist-web-font/Geomanist-Light.woff2') format('woff2'),
-      url('../geomanist-web-font/Geomanist-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
+	font-family: "Geomanist";
+	src: url("../geomanist-web-font/Geomanist-Light.woff2") format("woff2"),
+		url("../geomanist-web-font/Geomanist-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Geomanist';
-  src: url('../geomanist-web-font/Geomanist-Bold.woff2') format('woff2'),
-      url('../geomanist-web-font/Geomanist-Bold.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
+	font-family: "Geomanist";
+	src: url("../geomanist-web-font/Geomanist-Bold.woff2") format("woff2"),
+		url("../geomanist-web-font/Geomanist-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Geomanist';
-  src: url('../geomanist-web-font/Geomanist-ExtraLight.woff2') format('woff2'),
-      url('../geomanist-web-font/Geomanist-ExtraLight.woff') format('woff');
-  font-weight: 200;
-  font-style: normal;
-}
-
-
-@font-face {
-  font-family: 'Geomanist';
-  src: url('../geomanist-web-font/Geomanist-Regular.woff2') format('woff2'),
-      url('../geomanist-web-font/Geomanist-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+	font-family: "Geomanist";
+	src: url("../geomanist-web-font/Geomanist-ExtraLight.woff2") format("woff2"),
+		url("../geomanist-web-font/Geomanist-ExtraLight.woff") format("woff");
+	font-weight: 200;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Geomanist';
-  src: url('../geomanist-web-font/Geomanist-Medium.woff2') format('woff2'),
-      url('../geomanist-web-font/Geomanist-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
+	font-family: "Geomanist";
+	src: url("../geomanist-web-font/Geomanist-Regular.woff2") format("woff2"),
+		url("../geomanist-web-font/Geomanist-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 
 @font-face {
-  font-family: 'Geomanist Ultra';
-  src: url('../geomanist-web-font/Geomanist-Ultra.woff2') format('woff2'),
-      url('../geomanist-web-font/Geomanist-Ultra.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+	font-family: "Geomanist";
+	src: url("../geomanist-web-font/Geomanist-Medium.woff2") format("woff2"),
+		url("../geomanist-web-font/Geomanist-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Geomanist Ultra";
+	src: url("../geomanist-web-font/Geomanist-Ultra.woff2") format("woff2"),
+		url("../geomanist-web-font/Geomanist-Ultra.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 
 /* The side navigation menu */
 .sidenav {
-  height: 100%; /* 100% Full-height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  left: 0;
-  background-color: #fff; /* White*/
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 0px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-  box-shadow: 12px 12px 16px 0 rgba(69, 91, 99, 0.1);
+	height: 100%; /* 100% Full-height */
+	width: 0; /* 0 width - change this with JavaScript */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Stay on top */
+	top: 0; /* Stay at the top */
+	left: 0;
+	background-color: #fff; /* White*/
+	overflow-x: hidden; /* Disable horizontal scroll */
+	padding-top: 0px; /* Place content 60px from the top */
+	transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+	box-shadow: 12px 12px 16px 0 rgba(69, 91, 99, 0.1);
 }
 
 #overlay {
-  position: fixed; /* Sit on top of the page content */
-  display: none; /* Hidden by default */
-  width: 100%; /* Full width (cover the whole page) */
-  height: 100%; /* Full height (cover the whole page) */
-  top: 0; 
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color:rgba(55, 114, 255, 0.2); /* Black background with opacity */
-  z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
+	position: fixed; /* Sit on top of the page content */
+	display: none; /* Hidden by default */
+	width: 100%; /* Full width (cover the whole page) */
+	height: 100%; /* Full height (cover the whole page) */
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(55, 114, 255, 0.2); /* Black background with opacity */
+	z-index: 1; /* Specify a stack order in case you're using a different order for other elements */
 }
 
 #myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #3772ff; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 30px; /* Rounded corners */
-  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2);
-  width: 45px;
-  height: 45px;
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 30px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: #3772ff; /* Set a background color */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	border-radius: 30px; /* Rounded corners */
+	box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2);
+	width: 45px;
+	height: 45px;
 }
 
 /* The navigation menu links */
 .sidenav a {
-  padding-top: 20px;
-  padding-left: 25px;
-  padding-bottom: 5px;
-  text-decoration: none;
-  font-size: 15px;
-  font-family: Geomanist;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  color: #18206F;
-  display: block;
-  transition: 0.3s;
+	padding-top: 20px;
+	padding-left: 25px;
+	padding-bottom: 5px;
+	text-decoration: none;
+	font-size: 15px;
+	font-family: Geomanist;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	color: #18206f;
+	display: block;
+	transition: 0.3s;
 }
 
-#menu_active{
-  color: #3772ff !important; 
+#menu_active {
+	color: #3772ff !important;
 }
 
-.last_item{
-  padding-bottom: 40px !important;
+.last_item {
+	padding-bottom: 40px !important;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #3772ff;
+	color: #3772ff;
 }
 
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {
-  position: absolute;
-  top: -20px;
-  right: 15px;
-  font-size: 36px;
-  margin-left: 50px;
+	position: absolute;
+	top: -20px;
+	right: 15px;
+	font-size: 36px;
+	margin-left: 50px;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s;
-  padding: 20px;
+	transition: margin-left 0.5s;
+	padding: 20px;
 }
 
-.sidenav a img{
-  width: 13%;
-  padding-right: 15px;
+.sidenav a img {
+	width: 13%;
+	padding-right: 15px;
 }
 
-#TopImage{
-  width: 100%;
+#TopImage {
+	width: 100%;
 }
 
-#logout{
-  padding-left: 2px;
+#logout {
+	padding-left: 2px;
 }
 
-#menu{
-  padding-bottom: 60px;
-  margin-top: -20px;
+#menu {
+	padding-bottom: 60px;
+	margin-top: -20px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+	.sidenav {
+		padding-top: 15px;
+	}
+	.sidenav a {
+		font-size: 18px;
+	}
 }
 
 .welcome-card ion-img {
-  max-height: 35vh;
-  overflow: hidden;
+	max-height: 35vh;
+	overflow: hidden;
 }
 
-.TopHalf{
-  background: #F5F6FA;
-  padding-top: 60px;
-  padding-bottom: 20px;
-  padding-left: 10px;
+.TopHalf {
+	background: #f5f6fa;
+	padding-top: 60px;
+	padding-bottom: 20px;
+	padding-left: 10px;
 }
 
-.WelcomeHome{
-  padding-bottom: 40px;
+.WelcomeHome {
+	padding-bottom: 40px;
 }
 
-.WelcomeHome h2{
-  width: 279px;
-  font-family: Geomanist;
-  font-size: 24px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.24;
-  letter-spacing: normal;
-  text-align: left;
-  color: #3772ff;
+.WelcomeHome h2 {
+	width: 279px;
+	font-family: Geomanist;
+	font-size: 24px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.24;
+	letter-spacing: normal;
+	text-align: left;
+	color: #3772ff;
 }
 
 .dot {
-  width: 8px;
-  height: 8px;
-  background: #81D2C7;
-  border-radius: 50%;
-  color:#18206F;
-  line-height:100px;
-  display: inline-block;
-  opacity: 0.6;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: 5px;
-  margin-left: 5px;
-
+	width: 8px;
+	height: 8px;
+	background: #81d2c7;
+	border-radius: 50%;
+	color: #18206f;
+	line-height: 100px;
+	display: inline-block;
+	opacity: 0.6;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 5px;
+	margin-left: 5px;
 }
 
-.dotAlert{
-  width: 8px;
-  height: 8px;
-  background: #FF5A5F;
-  border-radius: 50%;
-  color:#18206F;
-  line-height:100px;
-  display: inline-block;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: 10px;
-  margin-left: -3px;
+.dotAlert {
+	width: 8px;
+	height: 8px;
+	background: #ff5a5f;
+	border-radius: 50%;
+	color: #18206f;
+	line-height: 100px;
+	display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 10px;
+	margin-left: -3px;
 }
 
-#smoke_alarm{
-  width: 220px;
-  font-family: Geomanist;
-  font-size: 10px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: left;
-  color: #18206f;
-  margin-bottom: 0px !important;
+#smoke_alarm {
+	width: 220px;
+	font-family: Geomanist;
+	font-size: 10px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-align: left;
+	color: #18206f;
+	margin-bottom: 0px !important;
 }
 
-.dotText{
-  width: 197px;
-  height: 15px;
-  font-family: Geomanist;
-  font-size: 12px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: left;
-  color: rgba(24, 32, 111, 0.5);
+.dotText {
+	width: 197px;
+	height: 15px;
+	font-family: Geomanist;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-align: left;
+	color: rgba(24, 32, 111, 0.5);
 }
 
-#Now{
-  width: 26px;
-  height: 15px;
-  font-family: Geomanist;
-  font-size: 10px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: left;
-  color: rgba(24, 32, 111, 0.5);
-  margin-bottom: -3px !important;
-
+#Now {
+	width: 26px;
+	height: 15px;
+	font-family: Geomanist;
+	font-size: 10px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-align: left;
+	color: rgba(24, 32, 111, 0.5);
+	margin-bottom: -3px !important;
 }
 
-.DashboardAlerts{
-  width: 280px;
-  height: 40px;
-  border-radius: 5px;
-  border: solid 0.1px #3772ff;
-  background-color: #eef1ff;
-  vertical-align: middle;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.DashboardAlerts {
+	width: 280px;
+	height: 40px;
+	border-radius: 5px;
+	border: solid 0.1px #3772ff;
+	background-color: #eef1ff;
+	vertical-align: middle;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.BottomHalf{
-  background: #fff;
-  padding-left: 25px;
-  padding-bottom: 20px;
-  padding-top: 10px;
+.BottomHalf {
+	background: #fff;
+	padding-left: 25px;
+	padding-bottom: 20px;
+	padding-top: 10px;
 }
 
-
-#Scenes{
-  width: 62px;
-  height: 25px;
-  font-family: Geomanist;
-  font-size: 20px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: left;
-  color: #18206f;
-  padding-left: 0px;
-  padding-bottom: 40px;
+#Scenes {
+	width: 62px;
+	height: 25px;
+	font-family: Geomanist;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-align: left;
+	color: #18206f;
+	padding-left: 0px;
+	padding-bottom: 40px;
 }
 
-#Rooms{
-  width: 62px;
-  height: 25px;
-  font-family: Geomanist;
-  font-size: 20px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: left;
-  color: #18206f;
-  padding-left: 0px;
-  padding-bottom: 40px;
-
+#Rooms {
+	width: 62px;
+	height: 25px;
+	font-family: Geomanist;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-align: left;
+	color: #18206f;
+	padding-left: 0px;
+	padding-bottom: 40px;
 }
 
-#ActiveCams{
-  width: 62px;
-  height: 25px;
-  font-family: Geomanist;
-  font-size: 20px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: left;
-  color: #18206f;
-  padding-left: 0px;
-  padding-bottom: 40px;
-
+#ActiveCams {
+	width: 62px;
+	height: 25px;
+	font-family: Geomanist;
+	font-size: 20px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-align: left;
+	color: #18206f;
+	padding-left: 0px;
+	padding-bottom: 40px;
 }
 
-#viewall{
-  width: 46px;
-  height: 16px;
-  font-family: Geomanist;
-  font-size: 13px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.23;
-  letter-spacing: normal;
-  text-align: left;
-  color: rgba(24, 32, 111, 0.25);
-  padding-left: 30px;
-  padding-top: 7px;
-  padding-bottom: 10px;
+#viewall {
+	width: 46px;
+	height: 16px;
+	font-family: Geomanist;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.23;
+	letter-spacing: normal;
+	text-align: left;
+	color: rgba(24, 32, 111, 0.25);
+	padding-left: 30px;
+	padding-top: 7px;
+	padding-bottom: 10px;
 }
 
 .scroll {
-  flex: 0 0 auto;
-  margin-right: 20px;
-  width: 85%;
-  height: 2%;
-  border-radius: 5px;
-  overflow-x: scroll;
+	flex: 0 0 auto;
+	margin-right: 20px;
+	width: 85%;
+	height: 2%;
+	border-radius: 5px;
+	overflow-x: scroll;
 }
 
-.container{
-  padding-right: 0px !important; 
+.container {
+	padding-right: 0px !important;
 }
 
-.ScenesContent{
-  padding-bottom: 30px;
-  -webkit-overflow-scrolling: touch;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+.ScenesContent {
+	padding-bottom: 30px;
+	-webkit-overflow-scrolling: touch;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
 }
 
-.scenes-active{
-  flex: 0 0 auto;
-  width: 90px;
-  height: 81px;
-  border-radius: 5px;
-  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.16) ;
-  border: solid 0.1px #3772ff ;
-  background-color: #3772ff ;
-  margin-right: 20px;
+.scenes-active {
+	flex: 0 0 auto;
+	width: 90px;
+	height: 81px;
+	border-radius: 5px;
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.16);
+	border: solid 0.1px #3772ff;
+	background-color: #3772ff;
+	margin-right: 20px;
 }
 
-.scenes-active p{
-  font-family: Geomanist;
-  font-size: 13px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.23;
-  letter-spacing: normal;
-  color: #ffffff;
-  padding-top: 25px;
-  text-align: center;
+.scenes-active p {
+	font-family: Geomanist;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.23;
+	letter-spacing: normal;
+	color: #ffffff;
+	padding-top: 25px;
+	text-align: center;
 }
 
-.scenes-inactive{
-  flex: 0 0 auto;
-  width: 90px;
-  height: 81px;
-  border-radius: 5px;
-  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.16);
-  border: solid 0.1px #3772ff;
-  background-color: #ffffff;
-  margin-right: 20px;
+.scenes-inactive {
+	flex: 0 0 auto;
+	width: 90px;
+	height: 81px;
+	border-radius: 5px;
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.16);
+	border: solid 0.1px #3772ff;
+	background-color: #ffffff;
+	margin-right: 20px;
+}
+
+.scenes-inactive p {
+	font-family: Geomanist;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.23;
+	letter-spacing: normal;
+	text-align: left;
+	color: #18206f;
+	padding-top: 25px;
+	text-align: center;
+}
+
+#gohome {
+	display: block;
+	margin: auto;
+	padding-top: 15px;
+}
+
+#leavinghome {
+	display: block;
+	margin: auto;
+	padding-top: 15px;
+}
+
+#bedtime {
+	display: block;
+	margin: auto;
+	padding-top: 15px;
+}
+
+#cinema {
+	display: block;
+	margin: auto;
+	padding-top: 15px;
+}
+
+.ActiveCamsContent {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+}
+
+.Headings {
+	background-color: #f5f6fa;
+	padding-top: 40px;
+	height: 60px;
+	display: block;
+}
+
+#Hmenu {
+	padding-bottom: 60px;
+	margin-top: -50px;
+	padding-left: 20px;
+}
+
+#Htitle {
+	font-family: Geomanist;
+	font-size: 15px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 60px;
+	letter-spacing: normal;
+	vertical-align: middle;
+	text-align: center;
+	color: #3772ff;
+	margin-top: -40px;
+}
+
+p {
+	font-family: Geomanist;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-align: left;
+	color: #18206f;
+	padding-top: 20px;
+}
+
+#privacy h2 {
+	font-family: Geomanist;
+	font-size: 25px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-align: left;
+	color: #18206f;
+	padding-top: 20px;
+}
+
+#privacy h3 {
+	font-family: Geomanist;
+	font-size: 20px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-align: left;
+	color: #18206f;
+	padding-top: 20px;
+}
+dl {
+	font-family: Geomanist;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-align: left;
+	color: #18206f;
+	padding-top: 10px;
+}
+
+dt {
+	font-family: Geomanist;
+	font-size: 15px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-align: left;
+	color: #18206f;
+}
+
+dd {
+	font-family: Geomanist;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	letter-spacing: normal;
+	text-align: left;
+	color: #18206f;
+	padding-top: 10px;
+}
+
+.RoomsContent {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	padding-bottom: 30px;
+}
+
+.monitor-card {
+	flex: 0 0 auto;
+	overflow-x: scroll;
+	margin-right: 20px;
+	color: #ffffff;
+	border-radius: 5px;
+	padding: 15px;
+}
+
+#JemimaBedroom {
+	width: 99%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("../img/room.jpg");
+  background-size: cover;
+	background-repeat: no-repeat;
 
 }
 
-.scenes-inactive p{
-  font-family: Geomanist;
-  font-size: 13px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.23;
-  letter-spacing: normal;
-  text-align: left;
-  color: #18206f;
-  padding-top: 25px;
-  text-align: center;
+#JemimaBathroom {
+	width: 99%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url("../img/bath.jpg");
+  background-size: cover;
+	background-repeat: no-repeat;
 }
 
-
-#gohome{
-  display: block;
-  margin: auto;
-  padding-top: 15px;
+.header-icons,
+.footer-icons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
-#leavinghome{
-  display: block;
-  margin: auto;
-  padding-top: 15px;
+.icon-left {
+	float: left;
+	width: 100px;
 }
 
-#bedtime{
-  display: block;
-  margin: auto;
-  padding-top: 15px;
+.icon-right {
+	float: right;
 }
 
-
-#cinema{
-  display: block;
-  margin: auto;
-  padding-top: 15px;
+.icon-center {
+	margin: 0 auto;
+	width: 100px;
 }
 
-.ActiveCamsContent{
-  -webkit-overflow-scrolling: touch;
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-
+.footer-icons .icon-left {
+	float: left;
+	width: 94%;
 }
 
-.Headings{
-  background-color: #F5F6FA;
-  padding-top: 40px;
-  height: 60px;
-  display: block;
+.footer-icons .icon-right {
+	float: right;
 }
 
-#Hmenu{
-  padding-bottom: 60px;
-  margin-top: -50px;
-  padding-left: 20px;
-}
-
-#Htitle{
-  font-family: Geomanist;
-  font-size: 15px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 60px;
-  letter-spacing: normal;
-  vertical-align: middle;
-  text-align: center; 
-  color: #3772ff;
-  margin-top: -40px;
-
-}
-
-p{
-  font-family: Geomanist;
-  font-size: 12px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: left;
-  color: #18206f;
-  padding-top: 20px;
-}
-
-#privacy h2{
-  font-family: Geomanist;
-  font-size: 25px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: left;
-  color: #18206F;
-  padding-top: 20px;
-}
-
-#privacy h3{
-  font-family: Geomanist;
-  font-size: 20px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: left;
-  color: #18206F;
-  padding-top: 20px;
-}
-dl{
-  font-family: Geomanist;
-  font-size: 12px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: left;
-  color: #18206f;
-  padding-top: 10px;
-}
-
-dt{
-  font-family: Geomanist;
-  font-size: 15px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: left;
-  color: #18206F;
-}
-
-dd{
-  font-family: Geomanist;
-  font-size: 12px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.25;
-  letter-spacing: normal;
-  text-align: left;
-  color: #18206f;
-  padding-top: 10px;
+.monitor-card-room {
+	text-align: left;
+	width: 100%;
+	font-size: 150%;
+	padding-top: 80px;
 }

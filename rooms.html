@@ -3,45 +3,48 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="true" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="BITS Smart Home App">
-    <meta name="author" content="BITS Smart Home App">
-    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="BITS Smart Home App" />
+    <meta name="author" content="BITS Smart Home App" />
+    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
     <title>
         BITS Smart Home - Rooms
     </title>
-    <link href="css/style.css" rel="stylesheet">
-
+    <link href="css/style.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
-    <img id="menu" onclick="openNav()" src="img/icons-menu.svg">
-    <div id="mySidenav" class="sidenav">
-        <img id="TopImage" src="img/top.png" alt="">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="index.html"> <img src="img/home.svg">Home</a>
-        <a id="menu_active" href="#"><img src="img/room_blue.svg"> Rooms</a>
-        <a href="#"><img src="img/device.svg"> Devices</a>
-        <a href="activity.html"><img src="img/activity.svg"> Activity</a>
-        <a href="#"><img src="img/family.svg"> Family Profile</a>
-        <a href="#"><img src="img/settings.svg"> Settings</a>
-        <a class="last_item" href="privacy.html"><img src="img/privacy.svg"> Privacy Policy</a>
-        <a href="#"><img id="logout" src="img/logout.svg"> Log Out</a>
+    <div id="overlay" onclick="closeNav()"></div>
+    <div class="Headings">
+        <h5 id="Htitle">ROOMS</h5>
+        <img id="Hmenu" onclick="openNav()" src="img/icons-menu_blue.svg" />
+        <div id="mySidenav" class="sidenav">
+            <img id="TopImage" src="img/top.png" alt="" />
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html"> <img src="img/home.svg" />Home</a>
+            <a id="menu_active" href="rooms.html"><img src="img/room_blue.svg" /> Rooms</a>
+            <a href="#"><img src="img/device.svg" /> Devices</a>
+            <a href="activity.html"><img src="img/activity.svg" /> Activity</a>
+            <a href="#"><img src="img/family.svg" /> Family Profile</a>
+            <a href="#"><img src="img/settings.svg" /> Settings</a>
+            <a class="last_item" href="privacy.html"><img src="img/privacy.svg" /> Privacy Policy</a>
+            <a href="#"><img id="logout" src="img/logout.svg" /> Log Out</a>
+        </div>
     </div>
 
 
@@ -52,12 +55,9 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
 </body>
 
-
 </html>
-
 
 <!--
 
