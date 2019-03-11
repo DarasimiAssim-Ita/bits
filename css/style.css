@@ -146,10 +146,6 @@ body {
 	color: #3772ff !important;
 }
 
-a{
-
-}
-
 .last_item {
 	padding-bottom: 40px !important;
 }
@@ -605,35 +601,84 @@ dd {
 	color: #ffffff;
 	border-radius: 5px;
 	padding: 15px;
+	font-family: Geomanist;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	text-shadow: 0.5px 0.5px 0px #000000;
+}
+
+#Livingroom {
+	width: 99%;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("../img/living.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#Powderroom {
+	width: 99%;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("../img/powder.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#Kitchen {
+	width: 99%;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("../img/kitchen.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 #JemimaBedroom {
 	width: 99%;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("../img/room.jpg");
-  background-size: cover;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		url("../img/room.jpg");
+	background-size: cover;
 	background-repeat: no-repeat;
-
 }
 
 #JemimaBathroom {
 	width: 99%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url("../img/bath3.jpg");
-  background-size: cover;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		url("../img/bath3.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#JohnBedroom {
+	width: 99%;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("../img/room2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#JohnBathroom {
+	width: 99%;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		url("../img/bath.jpg");
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 #GuestBedroom {
 	width: 99%;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("../img/room2.jpg");
-  background-size: cover;
+	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+		url("../img/bedroom.jpg");
+	background-size: cover;
 	background-repeat: no-repeat;
-
 }
 
 #GuestBathroom {
 	width: 99%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url("../img/bath.jpg");
-  background-size: cover;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+		url("../img/bath2.jpg");
+	background-size: cover;
 	background-repeat: no-repeat;
 }
 
@@ -673,3 +718,98 @@ dd {
 	font-size: 150%;
 	padding-top: 80px;
 }
+
+.AllRooms {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 30px;
+	padding-top: 20px;
+}
+
+.monitor-card-allrooms {
+	flex: 0 0 auto;
+	overflow-x: scroll;
+	margin-bottom: 20px;
+	color: #ffffff;
+	border-radius: 5px;
+	padding: 15px;
+	font-family: Geomanist;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	text-shadow: 0.5px 0.5px 0px #000000;
+}
+
+/* Activity */
+
+.card{
+	box-shadow:0 0px 20px 0 rgba(0, 0, 0, 0.16);
+	margin-bottom: 20px;
+}
+
+.activity-feed {
+	font-family: Geomanist;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.25;
+	padding: 15px;
+	list-style: none;
+}
+
+.activity-feed h5{
+	color: #3772ff;
+}
+
+.feed-item {
+	position: relative;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	border-left: 2px solid #e4e8eb;
+}
+
+.feed-item:last-child {
+	border-color: transparent;
+}
+
+.feed-item::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -6px;
+	width: 10px;
+	height: 10px;
+	border-radius: 6px;
+	background: #fff;
+	border: 1px solid #3772ff;
+}
+
+.date {
+	display: block;
+	position: relative;
+	top: -5px;
+	color: #8c96a3;
+	text-transform: uppercase;
+	font-size: 13px;
+	padding-bottom: 10px;
+}
+
+.text {
+	position: relative;
+	top: -3px;
+}
+
+#james{
+	width: 13%;
+	float: left;
+	padding-right: 5px;
+}
+
+
