@@ -23,7 +23,7 @@
 		<meta name="author" content="BITS Smart Home App" />
 		<link href="favicon.ico" type="image/x-icon" rel="shortcut icon" />
 		<title>
-			BITS Smart Home - Privacy Policy
+			BITS Smart Home - Settings
 		</title>
 		<link href="css/style.css" rel="stylesheet" />
 
@@ -39,27 +39,27 @@
 			integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
 			crossorigin="anonymous"
 		/>
-
+		
 	</head>
 
 	<body>
 		<div id="overlay" onclick="closeNav()"></div>
 		<div class="Headings">
-			<h5 id="Htitle">SCENES</h5>
+			<h5 id="Htitle">SETTINGS</h5>
 			<img id="Hmenu" onclick="openNav()" src="img/icons-menu_blue.svg" />
 			<div id="mySidenav" class="sidenav">
 				<img id="TopImage" src="img/top.png" alt="" />
 				<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
 					>&times;</a
 				>
-				<a id="menu_active" href="index.html">
-					<img src="img/home_blue.svg" />Home</a
-				>
+				<a href="index.html"> <img src="img/home.svg" />Home</a>
 				<a href="rooms.html"><img src="img/room.svg" /> Rooms</a>
 				<a href="devices.html"><img src="img/device.svg" /> Devices</a>
-				<a href="activity.html"><img src="img/activity.svg" /> Activity</a>
+				<a href="activity.html"
+					><img src="img/activity.svg" /> Activity</a
+				>
 				<a href="family.html"><img src="img/family.svg" /> Family Profile</a>
-				<a href="settings.html"><img src="img/settings.svg" /> Settings</a>
+				<a  id="menu_active" href="settings.html"><img src="img/settings_blue.svg" /> Settings</a>
 				<a class="last_item" href="privacy.html"
 					><img src="img/privacy.svg" /> Privacy Policy</a
 				>
@@ -67,64 +67,6 @@
 			</div>
 		</div>
 
-		<div class="AllScenes">
-			<div class="AllScenesContent">
-				<div class="row">
-					<div id="newrow" class="col allscenes-inactive">
-						<div>
-							<img id="gohome" src="img/gohome.svg" />
-							<p>I'm home</p>
-						</div>
-					</div>
-					<div class="col allscenes-inactive">
-						<div>
-							<img id="leavinghome" src="img/leaving home.svg" />
-							<p>I'm leaving</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div id="newrow" class="col allscenes-inactive">
-						<div>
-							<img id="bedtime" src="img/sleep2.svg" />
-							<p>Bedtime</p>
-						</div>
-					</div>
-					<div class="col allscenes-inactive">
-						<div>
-							<img id="cinema" src="img/cinema.svg" />
-							<p>Cinema</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div id="newrow" class="col allscenes-inactive">
-						<div>
-							<img id="wakeup" src="img/wakeup.svg" />
-							<p>Wake Up</p>
-						</div>
-					</div>
-					<div class="col allscenes-inactive">
-						<div>
-							<img id="romance" src="img/romance.svg" />
-							<p>Romance</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div id="newrow" class="col allscenes-inactive">
-						<div>
-							<img id="emergency" src="img/emergency.svg" />
-							<p>Emergency</p>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
 
 		<script src="js/script.js"></script>
 		<script

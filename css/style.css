@@ -472,6 +472,24 @@ body {
 	padding-top: 15px;
 }
 
+#wakeup {
+	display: block;
+	margin: auto;
+	padding-top: 15px;
+}
+
+#romance {
+	display: block;
+	margin: auto;
+	padding-top: 15px;
+}
+
+#emergency {
+	display: block;
+	margin: auto;
+	padding-top: 15px;
+}
+
 #cinema {
 	display: block;
 	margin: auto;
@@ -747,8 +765,7 @@ dd {
 
 /* Activity */
 
-.card{
-	box-shadow:0 0px 20px 0 rgba(0, 0, 0, 0.16);
+.card {
 	margin-bottom: 20px;
 }
 
@@ -763,7 +780,7 @@ dd {
 	list-style: none;
 }
 
-.activity-feed h5{
+.activity-feed h5 {
 	color: #3772ff;
 }
 
@@ -806,10 +823,219 @@ dd {
 	top: -3px;
 }
 
-#james{
+#james {
 	width: 13%;
 	float: left;
 	padding-right: 5px;
 }
 
+.AllScenes {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 30px;
+	padding-top: 20px;
+}
 
+.AllScenesContent {
+	padding-bottom: 30px;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+}
+
+.allscenes-active {
+	width: 90px;
+	height: 81px;
+	border-radius: 5px;
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.16);
+	border: solid 0.1px #3772ff;
+	background-color: #3772ff;
+	margin-right: 25px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+.allscenes-active p {
+	font-family: Geomanist;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.23;
+	letter-spacing: normal;
+	color: #ffffff;
+	padding-top: 25px;
+	text-align: center;
+}
+
+.allscenes-inactive {
+	width: 90px;
+	height: 81px;
+	border-radius: 5px;
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.16);
+	border: solid 0.1px #3772ff;
+	background-color: #ffffff;
+	margin-right: 25px;
+	margin-bottom: 20px;
+}
+
+.allscenes-inactive#newrow {
+	margin-left: 20px;
+}
+
+.allscenes-inactive p {
+	font-family: Geomanist;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.23;
+	letter-spacing: normal;
+	text-align: left;
+	color: #18206f;
+	padding-top: 25px;
+	text-align: center;
+}
+
+.allscenes-inactive #romance {
+	padding-top: 9px;
+}
+
+.allscenes-inactive #emergency {
+	padding-top: 9px;
+}
+
+.AllCameras {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 20px;
+}
+
+.Allscroll {
+	margin-right: 20px;
+	width: 100%;
+	height: 2%;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.parent {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.image1 {
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.image2 {
+	position: absolute;
+	top: 154px;
+	left: 223px;
+	width: 20%;
+}
+
+#HmenuBack {
+	padding-bottom: 60px;
+	margin-top: -44px;
+	padding-left: 20px;
+	width: 11%;
+	margin-left: -12px;
+}
+
+.FamilyProfile {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 20px;
+	font-family: Geomanist;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.23;
+	letter-spacing: normal;
+	text-align: left;
+	color: #18206f;
+	text-align: center;
+}
+
+#avatar {
+	width: 20%;
+	float: left;
+}
+
+.FamilyProfile h5 {
+	margin-right: 50px;
+}
+
+.FamilyProfile small {
+	font-size: 10px;
+	margin-left: -40px;
+}
+
+.FamilyMembers {
+	display: block;
+}
+
+.Caretakers {
+	display: block;
+}
+
+.FamilyMembers {
+	display: block;
+}
+
+.members {
+	display: flex;
+	flex-wrap: nowrap;
+	overflow-x: auto;
+	width: 106%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 4px;
+	padding-bottom: 30px;
+	font-family: Geomanist;
+	font-size: 13px;
+	font-weight: normal;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.23;
+	letter-spacing: normal;
+	text-align: left;
+	text-align: center;
+}
+
+.member {
+	flex: 0 0 auto;
+	width: 20%;
+	height: 2%;
+	margin-right: 10px;
+}
+
+#FamilyMainText {
+	float: left;
+	font-family: Geomanist;
+	font-size: 15px;
+	font-style: normal;
+	font-stretch: normal;
+	color: #18206f;
+	font-weight: 400;
+}
+
+#FamilyMainText span{
+	opacity: 0.5;
+}
+
+.Me {
+	height: 100%;
+	padding-bottom: 40px;
+}
