@@ -515,6 +515,13 @@ body {
 	padding-left: 20px;
 }
 
+#FAdd {
+	padding-bottom: 60px;
+	margin-top: -50px;
+	padding-right: 30px;
+	float: right;
+}
+
 #Htitle {
 	font-family: Geomanist;
 	font-size: 15px;
@@ -1031,7 +1038,7 @@ dd {
 	font-weight: 400;
 }
 
-#FamilyMainText span{
+#FamilyMainText span {
 	opacity: 0.5;
 }
 

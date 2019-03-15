@@ -28,3 +28,17 @@ function topFunction() {
 	document.body.scrollTop = 0; // For Safari
 	document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+//Open/Close Add Family member form
+
+function openForm() {
+	document.getElementById("myForm").style.display = "block";
+	document.getElementById("overlay").style.display = "block";
+
+}
+
+function closeForm() {
+	document.getElementById("myForm").style.display = "none";
+	document.getElementById("overlay").style.display = "none";
+
+}
