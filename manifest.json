@@ -4,16 +4,17 @@
 	"name": "BITS Smart Home",
 	"display": "standalone",
 	"start_url": "/",
-	"short_name": "BITS Smart Home",
-	"theme_color": "transparent",
+	"short_name": "BITS",
+	"theme_color": "#3772ff",
 	"description": "",
 	"orientation": "any",
-	"background_color": "transparent",
+	"background_color": "#3772ff",
 	"generated": "true",
 	"icons": [
 		{
-			"src": "icon.png",
-			"type": "image/icon.png"
+			"src": "img/icon.png",
+            "type": "image/png",
+            "sizes": "1000x1000"
 		}
 	]
 }
