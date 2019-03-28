@@ -392,6 +392,11 @@ body {
 	overflow-x: scroll;
 }
 
+#equ{
+	height: 200px;
+	margin-right: 20px;
+	width: 300px;
+}
 .container {
 	padding-right: 0px !important;
 }
@@ -481,13 +486,15 @@ body {
 #romance {
 	display: block;
 	margin: auto;
-	padding-top: 15px;
+	padding-top: 12px;
+	width: 24%;
 }
 
 #emergency {
 	display: block;
 	margin: auto;
-	padding-top: 15px;
+	padding-top: 12px;
+	width: 30%
 }
 
 #cinema {
