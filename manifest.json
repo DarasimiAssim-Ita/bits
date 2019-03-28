@@ -1,0 +1,19 @@
+{
+	"dir": "ltr",
+	"lang": "en",
+	"name": "BITS Smart Home",
+	"display": "browser",
+	"start_url": "/",
+	"short_name": "BITS Smart Home",
+	"theme_color": "transparent",
+	"description": "",
+	"orientation": "any",
+	"background_color": "transparent",
+	"generated": "true",
+	"icons": [
+		{
+			"src": "icon.png",
+			"type": "image/icon.png"
+		}
+	]
+}
