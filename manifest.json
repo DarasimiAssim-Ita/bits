@@ -3,7 +3,7 @@
 	"lang": "en",
 	"name": "BITS Smart Home",
 	"display": "standalone",
-	"start_url": "/",
+	"start_url": "login.html",
 	"short_name": "BITS",
 	"theme_color": "#3772ff",
 	"description": "",
