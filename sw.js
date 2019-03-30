@@ -10,7 +10,6 @@ var filesToCache = [
   'https://code.jquery.com/jquery-3.3.1.slim.min.js',
   'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js',
   'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js',
-  'login.html'
 ];
 
 // on installation of service worker, add files to the cache

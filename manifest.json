@@ -2,8 +2,8 @@
 	"dir": "ltr",
 	"lang": "en",
 	"name": "BITS Smart Home",
-	"display": "standalone",
 	"start_url": "/",
+	"display": "standalone",
 	"short_name": "BITS",
 	"theme_color": "#3772ff",
 	"description": "",
@@ -13,8 +13,8 @@
 	"icons": [
 		{
 			"src": "img/icon.png",
-            "type": "image/png",
-            "sizes": "1000x1000"
+			"type": "image/png",
+			"sizes": "1000x1000"
 		}
 	]
 }
